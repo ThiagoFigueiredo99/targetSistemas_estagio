@@ -26,3 +26,4 @@ C:\Users\Thiago Figueiredo\Documents\GitHub\targetSistemas_estagio\obj\Debug\net
 C:\Users\Thiago Figueiredo\Documents\GitHub\targetSistemas_estagio\obj\Debug\net8.0\teste_targetsistemas.pdb
 C:\Users\Thiago Figueiredo\Documents\GitHub\targetSistemas_estagio\obj\Debug\net8.0\teste_targetsistemas.genruntimeconfig.cache
 C:\Users\Thiago Figueiredo\Documents\GitHub\targetSistemas_estagio\obj\Debug\net8.0\ref\teste_targetsistemas.dll
+C:\Users\Thiago Figueiredo\Documents\GitHub\targetSistemas_estagio\obj\Debug\net8.0\teste_targetsistemas.sourcelink.json

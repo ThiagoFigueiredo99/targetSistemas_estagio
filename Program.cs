@@ -69,26 +69,46 @@ class Program
  
 
         Console.Write("5) Digite uma string: ");
-        string entrada = Console.ReadLine();
+        string original = Console.ReadLine();
 
-        string invertida = InverterString(entrada);
+        string invertido = InverterString(original);
 
-        Console.WriteLine("String invertida: {0}", invertida);
+        Console.WriteLine("Texto original: {0}", original);
+        Console.WriteLine("Texto invertido: {0}", invertido);
+
     }
 
 
-static bool IsFibonacci(int n){
-        int a = 0, b = 1;
-        while (b < n)
+static bool IsFibonacci(int n){ // Método para verificar se um número está na sequência de Fibonacci
+        int a = 0, b = 1; // Inicializamos os dois primeiros números da sequência de Fibonacci
+        while (b < n) // Enquanto o número atual na sequência de Fibonacci (b) for menor que o número fornecido (n)
         {
-            int temp = a;
-            a = b;
-            b = temp + b;
-        }
-        return b == n;
+            int temp = a; // Armazenamos temporariamente o valor de a
+            a = b; // Atualizamos a para o próximo número na sequência
+            b = temp + b; // Atualizamos b para a soma dos dois números anteriores
+        } 
+        return b == n; // Se b for igual a n, então n está na sequência de Fibonacci
     }
 
-static string InverterString(string str){
-        return new string(str.Reverse().ToArray());
+static string InverterString(string texto)
+    {
+        char[] caracteres = texto.ToCharArray();
+
+        int inicio = 0;
+        int fim = caracteres.Length - 1;
+        while (inicio < fim)
+        {
+            // Trocar os caracteres de posição
+            char temp = caracteres[inicio]; // Armazenar temporariamente o caractere na posição de início
+            caracteres[inicio] = caracteres[fim];  // Substituir o caractere na posição de início pelo caractere na posição de fim
+            caracteres[fim] = temp; // Substituímos o caractere na posição de fim pelo caractere armazenado temporariamente
+
+            // Mover os índices de início e fim
+            inicio++;
+            fim--;
+        }
+
+        // Converter o array de caracteres de volta para string
+        return new string(caracteres);
     }
 }
