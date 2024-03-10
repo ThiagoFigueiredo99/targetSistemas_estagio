@@ -24,13 +24,17 @@ Respostas:
 ## Desafio 4: Quebra-Cabeça dos Interruptores e Lâmpadas
 Descubra qual interruptor controla cada lâmpada em uma sala com três interruptores, usando apenas duas idas até uma das salas das lâmpadas.
 
-Reposta:
+**Reposta:**
 
-**Procedimento:**
 1. Ligue o primeiro interruptor e aguarde alguns minutos.
 2. Desligue o primeiro interruptor e ligue o segundo interruptor.
 3. Entre na sala.
-4. Analise as lâmpadas para determinar qual interruptor controla cada uma.
+4. Agora, quando entrar na sala, você verá:
+5. A lâmpada que estiver **acesa** foi controlada pelo **segundo interruptor** que você ligou (e deixou ligado).
+6. Verifique a lampada que esta **apagada e quente** foi controlada pelo **primeiro interruptor** (que você ligou primeiro e desligou em seguida).
+7. Agora a lâmpada que estiver **apagada e fria** foi controlada pelo **último interruptor** (terceiro interruptor) que você **permanceu desligado**.
+
+Dessa forma, você pode determinar qual interruptor controla cada lâmpada.
 
 ## Desafio 5: Inversão de Strings
 Escreva um programa que inverta os caracteres de uma string.
